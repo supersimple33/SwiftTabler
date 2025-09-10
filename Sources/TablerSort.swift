@@ -153,6 +153,40 @@ public extension View {
     func tablerSort<E: NSObject>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
     func tablerSort<E: NSObject>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UUID>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
     func tablerSort<E: NSObject>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UUID?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    
+    /// Swift-data support
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Bool>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Bool?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Date>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Date?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Double>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Double?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Float>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Float?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int16>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int16?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int32>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int32?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int64>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int64?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int8>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int8?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Int?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, String>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, String?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt16>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt16?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt32>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt32?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt64>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt64?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt8>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt8?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UInt?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UUID>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
+    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, UUID?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
 
     private func xlat<Element>(_ direction: TablerSort<Element>.Direction) -> SortOrder {
         direction == .forward ? SortOrder.forward : SortOrder.reverse
