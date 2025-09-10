@@ -157,10 +157,6 @@ public extension View {
     
     /// Swift-data support
     @available(iOS 17.0, macCatalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
-    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Bool>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
-    @available(iOS 17.0, macCatalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
-    func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Bool?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
-    @available(iOS 17.0, macCatalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
     func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Date>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
     @available(iOS 17.0, macCatalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
     func tablerSort<E: PersistentModel>(_ c: Binding<TablerContext<E>>, _ k: KeyPath<E, Date?>) -> SortDescriptor<E> { SortDescriptor<E>(k, order: xlat(updateSort(c, k))) }
