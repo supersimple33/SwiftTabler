@@ -17,6 +17,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 public struct TablerSort<Element>
     where Element: Identifiable
